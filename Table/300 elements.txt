@@ -1,0 +1,80 @@
+Bucket 0:
+60: Value 60 | 40: Value 40 | 20: Value 20 | 0: Value 0 | 80: Value 80 | 100: Value 100 | 120: Value 120 | 140: Value 140 | 160: Value 160 | 180: Value 180 | 200: Value 200 | 220: Value 220 | 240: Value 240 | 260: Value 260 | 280: Value 280 | 300: Value 300 | 
+Bucket 1:
+61: Value 61 | 41: Value 41 | 21: Value 21 | 1: Value 1 | 81: Value 81 | 101: Value 101 | 121: Value 121 | 141: Value 141 | 161: Value 161 | 181: Value 181 | 201: Value 201 | 221: Value 221 | 241: Value 241 | 261: Value 261 | 281: Value 281 | 
+Bucket 2:
+62: Value 62 | 42: Value 42 | 22: Value 22 | 2: Value 2 | 82: Value 82 | 102: Value 102 | 122: Value 122 | 142: Value 142 | 162: Value 162 | 182: Value 182 | 202: Value 202 | 222: Value 222 | 242: Value 242 | 262: Value 262 | 282: Value 282 | 
+Bucket 3:
+63: Value 63 | 43: Value 43 | 23: Value 23 | 3: Value 3 | 83: Value 83 | 103: Value 103 | 123: Value 123 | 143: Value 143 | 163: Value 163 | 183: Value 183 | 203: Value 203 | 223: Value 223 | 243: Value 243 | 263: Value 263 | 283: Value 283 | 
+Bucket 4:
+64: Value 64 | 44: Value 44 | 24: Value 24 | 4: Value 4 | 84: Value 84 | 104: Value 104 | 124: Value 124 | 144: Value 144 | 164: Value 164 | 184: Value 184 | 204: Value 204 | 224: Value 224 | 244: Value 244 | 264: Value 264 | 284: Value 284 | 
+Bucket 5:
+65: Value 65 | 45: Value 45 | 25: Value 25 | 5: Value 5 | 85: Value 85 | 105: Value 105 | 125: Value 125 | 145: Value 145 | 165: Value 165 | 185: Value 185 | 205: Value 205 | 225: Value 225 | 245: Value 245 | 265: Value 265 | 285: Value 285 | 
+Bucket 6:
+66: Value 66 | 46: Value 46 | 26: Value 26 | 6: Value 6 | 86: Value 86 | 106: Value 106 | 126: Value 126 | 146: Value 146 | 166: Value 166 | 186: Value 186 | 206: Value 206 | 226: Value 226 | 246: Value 246 | 266: Value 266 | 286: Value 286 | 
+Bucket 7:
+67: Value 67 | 47: Value 47 | 27: Value 27 | 7: Value 7 | 87: Value 87 | 107: Value 107 | 127: Value 127 | 147: Value 147 | 167: Value 167 | 187: Value 187 | 207: Value 207 | 227: Value 227 | 247: Value 247 | 267: Value 267 | 287: Value 287 | 
+Bucket 8:
+68: Value 68 | 48: Value 48 | 28: Value 28 | 8: Value 8 | 88: Value 88 | 108: Value 108 | 128: Value 128 | 148: Value 148 | 168: Value 168 | 188: Value 188 | 208: Value 208 | 228: Value 228 | 248: Value 248 | 268: Value 268 | 288: Value 288 | 
+Bucket 9:
+69: Value 69 | 49: Value 49 | 29: Value 29 | 9: Value 9 | 89: Value 89 | 109: Value 109 | 129: Value 129 | 149: Value 149 | 169: Value 169 | 189: Value 189 | 209: Value 209 | 229: Value 229 | 249: Value 249 | 269: Value 269 | 289: Value 289 | 
+Bucket 10:
+90: Value 90 | 110: Value 110 | 130: Value 130 | 150: Value 150 | 170: Value 170 | 190: Value 190 | 210: Value 210 | 230: Value 230 | 250: Value 250 | 270: Value 270 | 290: Value 290 | 70: Value 70 | 50: Value 50 | 30: Value 30 | 10: Value 10 | 
+Bucket 11:
+91: Value 91 | 111: Value 111 | 131: Value 131 | 151: Value 151 | 171: Value 171 | 191: Value 191 | 211: Value 211 | 231: Value 231 | 251: Value 251 | 271: Value 271 | 291: Value 291 | 71: Value 71 | 51: Value 51 | 31: Value 31 | 11: Value 11 | 
+Bucket 12:
+92: Value 92 | 112: Value 112 | 132: Value 132 | 152: Value 152 | 172: Value 172 | 192: Value 192 | 212: Value 212 | 232: Value 232 | 252: Value 252 | 272: Value 272 | 292: Value 292 | 72: Value 72 | 52: Value 52 | 32: Value 32 | 12: Value 12 | 
+Bucket 13:
+93: Value 93 | 113: Value 113 | 133: Value 133 | 153: Value 153 | 173: Value 173 | 193: Value 193 | 213: Value 213 | 233: Value 233 | 253: Value 253 | 273: Value 273 | 293: Value 293 | 73: Value 73 | 53: Value 53 | 33: Value 33 | 13: Value 13 | 
+Bucket 14:
+94: Value 94 | 114: Value 114 | 134: Value 134 | 154: Value 154 | 174: Value 174 | 194: Value 194 | 214: Value 214 | 234: Value 234 | 254: Value 254 | 274: Value 274 | 294: Value 294 | 74: Value 74 | 54: Value 54 | 34: Value 34 | 14: Value 14 | 
+Bucket 15:
+95: Value 95 | 115: Value 115 | 135: Value 135 | 155: Value 155 | 175: Value 175 | 195: Value 195 | 215: Value 215 | 235: Value 235 | 255: Value 255 | 275: Value 275 | 295: Value 295 | 75: Value 75 | 55: Value 55 | 35: Value 35 | 15: Value 15 | 
+Bucket 16:
+76: Value 76 | 96: Value 96 | 116: Value 116 | 136: Value 136 | 156: Value 156 | 176: Value 176 | 196: Value 196 | 216: Value 216 | 236: Value 236 | 256: Value 256 | 276: Value 276 | 296: Value 296 | 56: Value 56 | 36: Value 36 | 16: Value 16 | 
+Bucket 17:
+77: Value 77 | 97: Value 97 | 117: Value 117 | 137: Value 137 | 157: Value 157 | 177: Value 177 | 197: Value 197 | 217: Value 217 | 237: Value 237 | 257: Value 257 | 277: Value 277 | 297: Value 297 | 57: Value 57 | 37: Value 37 | 17: Value 17 | 
+Bucket 18:
+78: Value 78 | 98: Value 98 | 118: Value 118 | 138: Value 138 | 158: Value 158 | 178: Value 178 | 198: Value 198 | 218: Value 218 | 238: Value 238 | 258: Value 258 | 278: Value 278 | 298: Value 298 | 58: Value 58 | 38: Value 38 | 18: Value 18 | 
+Bucket 19:
+79: Value 79 | 99: Value 99 | 119: Value 119 | 139: Value 139 | 159: Value 159 | 179: Value 179 | 199: Value 199 | 219: Value 219 | 239: Value 239 | 259: Value 259 | 279: Value 279 | 299: Value 299 | 59: Value 59 | 39: Value 39 | 19: Value 19 | 
+Bucket 20:
+300: Value 300 | 260: Value 260 | 220: Value 220 | 180: Value 180 | 140: Value 140 | 100: Value 100 | 20: Value 20 | 60: Value 60 | 
+Bucket 21:
+261: Value 261 | 221: Value 221 | 181: Value 181 | 141: Value 141 | 101: Value 101 | 21: Value 21 | 61: Value 61 | 
+Bucket 22:
+262: Value 262 | 222: Value 222 | 182: Value 182 | 142: Value 142 | 102: Value 102 | 22: Value 22 | 62: Value 62 | 
+Bucket 23:
+263: Value 263 | 223: Value 223 | 183: Value 183 | 143: Value 143 | 103: Value 103 | 23: Value 23 | 63: Value 63 | 
+Bucket 24:
+264: Value 264 | 224: Value 224 | 184: Value 184 | 144: Value 144 | 104: Value 104 | 24: Value 24 | 64: Value 64 | 
+Bucket 25:
+265: Value 265 | 225: Value 225 | 185: Value 185 | 145: Value 145 | 105: Value 105 | 25: Value 25 | 65: Value 65 | 
+Bucket 26:
+266: Value 266 | 226: Value 226 | 186: Value 186 | 146: Value 146 | 106: Value 106 | 26: Value 26 | 66: Value 66 | 
+Bucket 27:
+267: Value 267 | 227: Value 227 | 187: Value 187 | 147: Value 147 | 107: Value 107 | 27: Value 27 | 67: Value 67 | 
+Bucket 28:
+268: Value 268 | 228: Value 228 | 188: Value 188 | 148: Value 148 | 108: Value 108 | 28: Value 28 | 68: Value 68 | 
+Bucket 29:
+269: Value 269 | 229: Value 229 | 189: Value 189 | 149: Value 149 | 109: Value 109 | 29: Value 29 | 69: Value 69 | 
+Bucket 30:
+30: Value 30 | 70: Value 70 | 270: Value 270 | 230: Value 230 | 190: Value 190 | 150: Value 150 | 110: Value 110 | 
+Bucket 31:
+31: Value 31 | 71: Value 71 | 271: Value 271 | 231: Value 231 | 191: Value 191 | 151: Value 151 | 111: Value 111 | 
+Bucket 32:
+32: Value 32 | 72: Value 72 | 272: Value 272 | 232: Value 232 | 192: Value 192 | 152: Value 152 | 112: Value 112 | 
+Bucket 33:
+33: Value 33 | 73: Value 73 | 273: Value 273 | 233: Value 233 | 193: Value 193 | 153: Value 153 | 113: Value 113 | 
+Bucket 34:
+34: Value 34 | 74: Value 74 | 274: Value 274 | 234: Value 234 | 194: Value 194 | 154: Value 154 | 114: Value 114 | 
+Bucket 35:
+35: Value 35 | 75: Value 75 | 275: Value 275 | 235: Value 235 | 195: Value 195 | 155: Value 155 | 115: Value 115 | 
+Bucket 36:
+36: Value 36 | 276: Value 276 | 236: Value 236 | 196: Value 196 | 156: Value 156 | 116: Value 116 | 76: Value 76 | 
+Bucket 37:
+37: Value 37 | 277: Value 277 | 237: Value 237 | 197: Value 197 | 157: Value 157 | 117: Value 117 | 77: Value 77 | 
+Bucket 38:
+38: Value 38 | 278: Value 278 | 238: Value 238 | 198: Value 198 | 158: Value 158 | 118: Value 118 | 78: Value 78 | 
+Bucket 39:
+39: Value 39 | 279: Value 279 | 239: Value 239 | 199: Value 199 | 159: Value 159 | 119: Value 119 | 79: Value 79 | 

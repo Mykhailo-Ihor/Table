@@ -1,12 +1,12 @@
 #include <iostream>
 #include <sstream>
-
+#include <fstream>
 using namespace std;
 
 template<typename K, typename V>
-class Table 
+class Table
 {
-private:
+public:
     class Node
     {
     public:
@@ -15,22 +15,39 @@ private:
         Node* next;
         Node(const K& k, const V& v) : key(k), value(v), next(nullptr) {}
     };
-    Node* head; 
+private:
+    Node* head;
 public:
-    Table() : head(nullptr) {} 
-
-    void setValue(const K& key, const V& value) {
+    Table() : head(nullptr) {}
+    Table& setValue(const K& key, const V& value)
+    {
+        Node* current = head;
+        while (current != nullptr)
+        {
+            if (current->key == key)
+            {
+                current->value = value;
+                return *this;
+            }
+            current = current->next;
+        }
         Node* newNode = new Node(key, value);
         newNode->next = head;
         head = newNode;
+        return *this;
     }
-
-    V getValue(const K& key) const 
+    V getValue(const K& key) const
     {
-        Node* current = head;
-        while (current != nullptr) 
+        if (head == nullptr)
         {
-            if (current->key == key) 
+            ostringstream oss;
+            oss << "Can't get value, table is empty\n";
+            throw runtime_error(oss.str());
+        }
+        Node* current = head;
+        while (current != nullptr)
+        {
+            if (current->key == key)
             {
                 return current->value;
             }
@@ -41,7 +58,12 @@ public:
         throw out_of_range(oss.str());
     }
 
-    void removeValue(const K& key) {
+    void removeValue(const K& key)
+    {
+        if (head == nullptr)
+        {
+            throw runtime_error("Table is empty\n");
+        }
         Node* current = head;
         Node* prev = nullptr;
         while (current != nullptr) {
@@ -63,20 +85,29 @@ public:
         throw out_of_range(oss.str());
     }
 
-    void print(ostream& os = cout) const 
+    void print(ostream& os = cout) const
     {
-        Node* current = head;
-        while (current != nullptr) 
+        if (head == nullptr)
         {
-            os << current->key << ": " << current->value << endl;
+            os << "Table is empty\n";
+        }
+        Node* current = head;
+        while (current != nullptr)
+        {
+            os << current->key << ": " << current->value << " | ";
             current = current->next;
         }
+        os << endl;
     }
 
-    ~Table() 
+    Node* getHead()
+    {
+        return head;
+    }
+    ~Table()
     {
         Node* current = head;
-        while (current != nullptr) 
+        while (current != nullptr)
         {
             Node* temp = current;
             current = current->next;
@@ -85,30 +116,128 @@ public:
     }
 };
 
+template<typename V>
+class HashTable
+{
+public:
+    int itemCount; 
+private:
+    int TABLE_SIZE = 10;
+    Table<int, V>* tableArray; 
+    double loadFactorThreshold; 
+    
+
+    int hashFunction(int key) const {
+        return key % TABLE_SIZE;
+    }
+
+    void checkLoadFactor() 
+    {
+        double loadFactor = (double)itemCount / (double)(TABLE_SIZE * TABLE_SIZE);
+        if (loadFactor > loadFactorThreshold) {
+            rebuild();
+        }
+    }
+
+    void rehash()
+    {
+        for (int i = 0; i < TABLE_SIZE; ++i) {
+            typename Table<int, V>::Node* current = tableArray[i].getHead();
+            while (current != nullptr) {
+                int index = hashFunction(current->key);
+                tableArray[index].setValue(current->key, current->value);
+                current = current->next;
+            }
+        }
+    }
+    void rebuild()
+    {
+        int newCapacity = TABLE_SIZE * 2;
+        Table<int, V>* tempArray = new Table<int, V>[newCapacity];
+        for (int i = 0; i < TABLE_SIZE; ++i) {
+            typename Table<int, V>::Node* current = tableArray[i].getHead();
+            while (current != nullptr) {
+                int newIndex = hashFunction(current->key) % newCapacity;
+                tempArray[newIndex].setValue(current->key, current->value); 
+                current = current->next;
+            }
+        }
+        delete[] tableArray; 
+        tableArray = tempArray; 
+        TABLE_SIZE = newCapacity; 
+        rehash();
+    }
+public:
+   
+    HashTable(double loadFactor = 0.75) : loadFactorThreshold(loadFactor), itemCount(0) 
+    {
+        tableArray = new Table<int, V>[TABLE_SIZE]; 
+    }
+
+    void add(int key, const V& value) 
+    {
+        int index = hashFunction(key);
+        tableArray[index].setValue(key, value);
+        ++itemCount;
+        checkLoadFactor();
+    }
+
+    V getValue(int key) const 
+    {
+        int index = hashFunction(key);
+        return tableArray[index].getValue(key);
+    }
+
+    void remove(int key) 
+    {
+        int index = hashFunction(key);
+        tableArray[index].removeValue(key);
+        itemCount--;
+    }
+
+    void print(ostream& os = cout) const {
+        for (int i = 0; i < TABLE_SIZE; ++i)
+        {
+            os << "Bucket " << i << ":" << endl;
+            tableArray[i].print(os);
+        }
+    }
+
+    ~HashTable() {
+        delete[] tableArray;
+    }
+};
+
 int main()
 {
-
-    Table<string, int> table;
-
-    table.setValue("1", 3);
-    table.setValue("2", 4);
-    table.setValue("3", 5);
-    table.print();
-    try
+    HashTable<string> hashTable;
+    for (int i = 0; i < 75; ++i)
     {
-        table.removeValue("4");
+        ostringstream oss;
+        oss << "Value " << i;
+        hashTable.add(i, oss.str());
     }
-    catch (const out_of_range& e) {
-        cerr << e.what() << endl;
-    }
-    try
+    ofstream fout("HashTable.txt", ios::out);
+    hashTable.print(fout);
+    hashTable.print();
+    fout.close();
+    for (int i = 75; i < 100; ++i)
     {
-        cout << "Value with key 1: " << table.getValue("1") << endl;
-        cout << table.getValue("5");
+        ostringstream oss;
+        oss << "Value " << i;
+        hashTable.add(i, oss.str());
     }
-    catch (const out_of_range& e) 
+    fout.open("100 elements.txt", ios::out);
+    hashTable.print(fout);
+    fout.close();
+    for (int i = 100; i < 301; ++i)
     {
-        cerr << e.what() << endl;
+        ostringstream oss;
+        oss << "Value " << i;
+        hashTable.add(i, oss.str());
     }
+    fout.open("300 elements.txt", ios::out);
+    hashTable.print(fout);
+    fout.close();
     return 0;
 }

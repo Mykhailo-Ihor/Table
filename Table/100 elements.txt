@@ -1,0 +1,40 @@
+Bucket 0:
+80: Value 80 | 0: Value 0 | 10: Value 10 | 20: Value 20 | 30: Value 30 | 40: Value 40 | 50: Value 50 | 60: Value 60 | 70: Value 70 | 
+Bucket 1:
+81: Value 81 | 1: Value 1 | 11: Value 11 | 21: Value 21 | 31: Value 31 | 41: Value 41 | 51: Value 51 | 61: Value 61 | 71: Value 71 | 
+Bucket 2:
+82: Value 82 | 2: Value 2 | 12: Value 12 | 22: Value 22 | 32: Value 32 | 42: Value 42 | 52: Value 52 | 62: Value 62 | 72: Value 72 | 
+Bucket 3:
+83: Value 83 | 3: Value 3 | 13: Value 13 | 23: Value 23 | 33: Value 33 | 43: Value 43 | 53: Value 53 | 63: Value 63 | 73: Value 73 | 
+Bucket 4:
+84: Value 84 | 4: Value 4 | 14: Value 14 | 24: Value 24 | 34: Value 34 | 44: Value 44 | 54: Value 54 | 64: Value 64 | 74: Value 74 | 
+Bucket 5:
+85: Value 85 | 5: Value 5 | 15: Value 15 | 25: Value 25 | 35: Value 35 | 45: Value 45 | 55: Value 55 | 65: Value 65 | 75: Value 75 | 
+Bucket 6:
+86: Value 86 | 6: Value 6 | 16: Value 16 | 26: Value 26 | 36: Value 36 | 46: Value 46 | 56: Value 56 | 66: Value 66 | 
+Bucket 7:
+87: Value 87 | 7: Value 7 | 17: Value 17 | 27: Value 27 | 37: Value 37 | 47: Value 47 | 57: Value 57 | 67: Value 67 | 
+Bucket 8:
+88: Value 88 | 8: Value 8 | 18: Value 18 | 28: Value 28 | 38: Value 38 | 48: Value 48 | 58: Value 58 | 68: Value 68 | 
+Bucket 9:
+89: Value 89 | 9: Value 9 | 19: Value 19 | 29: Value 29 | 39: Value 39 | 49: Value 49 | 59: Value 59 | 69: Value 69 | 
+Bucket 10:
+90: Value 90 | 70: Value 70 | 50: Value 50 | 30: Value 30 | 10: Value 10 | 
+Bucket 11:
+91: Value 91 | 71: Value 71 | 51: Value 51 | 31: Value 31 | 11: Value 11 | 
+Bucket 12:
+92: Value 92 | 72: Value 72 | 52: Value 52 | 32: Value 32 | 12: Value 12 | 
+Bucket 13:
+93: Value 93 | 73: Value 73 | 53: Value 53 | 33: Value 33 | 13: Value 13 | 
+Bucket 14:
+94: Value 94 | 74: Value 74 | 54: Value 54 | 34: Value 34 | 14: Value 14 | 
+Bucket 15:
+95: Value 95 | 75: Value 75 | 55: Value 55 | 35: Value 35 | 15: Value 15 | 
+Bucket 16:
+96: Value 96 | 76: Value 76 | 56: Value 56 | 36: Value 36 | 16: Value 16 | 
+Bucket 17:
+97: Value 97 | 77: Value 77 | 57: Value 57 | 37: Value 37 | 17: Value 17 | 
+Bucket 18:
+98: Value 98 | 78: Value 78 | 58: Value 58 | 38: Value 38 | 18: Value 18 | 
+Bucket 19:
+99: Value 99 | 79: Value 79 | 59: Value 59 | 39: Value 39 | 19: Value 19 | 

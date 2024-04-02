@@ -6,43 +6,66 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace TableUnitTest
 {
-    TEST_CLASS(TableTest)
+    TEST_CLASS(HashTableTests)
     {
     public:
-        TEST_METHOD(TestSetValue)
+
+        TEST_METHOD(TestAdd)
         {
-            Table<std::string, int> table;
-            table.setValue("1", 5);
-            Assert::AreEqual(5, table.getValue("1"));
+            HashTable<std::string> hashTable;
+            hashTable.add(1, "Value1");
+            hashTable.add(2, "Value2");
+            hashTable.add(3, "Value3");
+
+            Assert::AreEqual("Value1", hashTable.getValue(1).c_str());
+            Assert::AreEqual("Value2", hashTable.getValue(2).c_str());
+            Assert::AreEqual("Value3", hashTable.getValue(3).c_str());
+        }
+
+        TEST_METHOD(TestRemove)
+        {
+            HashTable<std::string> hashTable;
+            hashTable.add(1, "Value1");
+            hashTable.add(2, "Value2");
+            hashTable.add(3, "Value3");
+
+            hashTable.remove(2);
+
+            Assert::ExpectException<std::exception>([&hashTable] { hashTable.getValue(2); });
         }
 
         TEST_METHOD(TestGetValue)
         {
-            Table<std::string, int> table;
-            table.setValue("1", 5);
-            Assert::AreEqual(5, table.getValue("1"));
-        }
+            HashTable<std::string> hashTable;
+            hashTable.add(1, "Value1");
+            hashTable.add(2, "Value2");
+            hashTable.add(3, "Value3");
 
-        TEST_METHOD(TestRemoveValue)
-        {
-            Table<std::string, int> table;
-            table.setValue("1", 5);
-            table.removeValue("1");
-            Assert::ExpectException<std::out_of_range>([&] { table.getValue("1"); });
+            Assert::AreEqual("Value1", hashTable.getValue(1).c_str());
+            Assert::AreEqual("Value2", hashTable.getValue(2).c_str());
+            Assert::AreEqual("Value3", hashTable.getValue(3).c_str());
         }
-
         TEST_METHOD(TestPrint)
         {
-            Table<std::string, int> table;
-            table.setValue("1", 5);
-            table.setValue("2", 3);
-            table.setValue("3", 7);
+            HashTable<std::string> hashTable;
+            hashTable.add(1, "Value1");
+            hashTable.add(2, "Value2");
+            hashTable.add(3, "Value3");
 
-            std::ostringstream output;
-
-            table.print(output);
-
-            Assert::AreEqual(std::string("3: 7\n2: 3\n1: 5\n"), output.str());
+            std::stringstream expectedOutput;
+            expectedOutput << "Bucket 0:\nTable is empty\n" << std::endl;
+            expectedOutput << "Bucket 1:\n1: Value1 | " << std::endl;
+            expectedOutput << "Bucket 2:\n2: Value2 | " << std::endl;
+            expectedOutput << "Bucket 3:\n3: Value3 | " << std::endl;
+            expectedOutput << "Bucket 4:\nTable is empty\n" << std::endl;
+            expectedOutput << "Bucket 5:\nTable is empty\n" << std::endl;
+            expectedOutput << "Bucket 6:\nTable is empty\n" << std::endl;
+            expectedOutput << "Bucket 7:\nTable is empty\n" << std::endl;
+            expectedOutput << "Bucket 8:\nTable is empty\n" << std::endl;
+            expectedOutput << "Bucket 9:\nTable is empty\n" << std::endl;
+            std::stringstream outputStream;
+            hashTable.print(outputStream);
+            Assert::AreEqual(expectedOutput.str(), outputStream.str());
         }
     };
 }

@@ -1,0 +1,20 @@
+Bucket 0:
+70: Value 70 | 60: Value 60 | 50: Value 50 | 40: Value 40 | 30: Value 30 | 20: Value 20 | 10: Value 10 | 0: Value 0 | 
+Bucket 1:
+71: Value 71 | 61: Value 61 | 51: Value 51 | 41: Value 41 | 31: Value 31 | 21: Value 21 | 11: Value 11 | 1: Value 1 | 
+Bucket 2:
+72: Value 72 | 62: Value 62 | 52: Value 52 | 42: Value 42 | 32: Value 32 | 22: Value 22 | 12: Value 12 | 2: Value 2 | 
+Bucket 3:
+73: Value 73 | 63: Value 63 | 53: Value 53 | 43: Value 43 | 33: Value 33 | 23: Value 23 | 13: Value 13 | 3: Value 3 | 
+Bucket 4:
+74: Value 74 | 64: Value 64 | 54: Value 54 | 44: Value 44 | 34: Value 34 | 24: Value 24 | 14: Value 14 | 4: Value 4 | 
+Bucket 5:
+65: Value 65 | 55: Value 55 | 45: Value 45 | 35: Value 35 | 25: Value 25 | 15: Value 15 | 5: Value 5 | 
+Bucket 6:
+66: Value 66 | 56: Value 56 | 46: Value 46 | 36: Value 36 | 26: Value 26 | 16: Value 16 | 6: Value 6 | 
+Bucket 7:
+67: Value 67 | 57: Value 57 | 47: Value 47 | 37: Value 37 | 27: Value 27 | 17: Value 17 | 7: Value 7 | 
+Bucket 8:
+68: Value 68 | 58: Value 58 | 48: Value 48 | 38: Value 38 | 28: Value 28 | 18: Value 18 | 8: Value 8 | 
+Bucket 9:
+69: Value 69 | 59: Value 59 | 49: Value 49 | 39: Value 39 | 29: Value 29 | 19: Value 19 | 9: Value 9 | 
